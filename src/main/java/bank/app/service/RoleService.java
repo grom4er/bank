@@ -1,6 +1,5 @@
 package bank.app.service;
 
-
 import bank.app.model.Role;
 
 public interface RoleService {

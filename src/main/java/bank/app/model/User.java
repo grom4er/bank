@@ -21,8 +21,8 @@ public class User {
     private String name;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
-    private String phoneNumber;
     @Column(name = "phone_number", unique = true)
+    private String phoneNumber;
     private String password;
     @ManyToMany
     private Set<Role> roles;

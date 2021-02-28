@@ -13,5 +13,4 @@ public interface UserService {
     List<User> findAll();
 
     User getByPhoneNumber(String phoneNumber);
-
 }

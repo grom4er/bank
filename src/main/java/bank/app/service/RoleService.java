@@ -1,6 +1,7 @@
 package bank.app.service;
 
-import javax.management.relation.Role;
+
+import bank.app.model.Role;
 
 public interface RoleService {
     Role save(Role role);

@@ -31,11 +31,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> findAll() {
-        return repository.findAll();
-    }
-
-    @Override
     public User getByPhoneNumber(String phoneNumber) {
         return repository.getByPhoneNumber(phoneNumber).orElseThrow(() -> new NoSuchEntityException(
                 "Can't take user by phone number " + phoneNumber));

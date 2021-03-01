@@ -34,7 +34,7 @@ public class UserTest {
         user.setPhoneNumber("+380");
         user.setName("User");
         userService.save(user);
-        User getUserFromDB = userService.getById(1L);
+        User getUserFromDB = userService.getByPhoneNumber("+380");
         assertEquals(getUserFromDB.getId(), 1L);
         assertEquals(getUserFromDB.getName(),"User");
         assertEquals(getUserFromDB.getPhoneNumber(), "+380");

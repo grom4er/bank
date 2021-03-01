@@ -10,7 +10,5 @@ public interface UserService {
 
     User update(User user);
 
-    List<User> findAll();
-
     User getByPhoneNumber(String phoneNumber);
 }

@@ -1,6 +1,6 @@
 package bank.app.service.impl;
 
-import bank.app.exceptions.UserException;
+import bank.app.exceptions.NoSuchEntityException;
 import bank.app.model.Role;
 import bank.app.repository.RoleRepository;
 import bank.app.service.RoleService;
@@ -22,7 +22,7 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public Role getByName(String roleName) {
         return repository.getByRoleName(Role.Roles.valueOf(roleName))
-               .orElseThrow(() -> new UserException((
+               .orElseThrow(() -> new NoSuchEntityException((
                        String.format("Can't take role by name %s", roleName))));
     }
 }

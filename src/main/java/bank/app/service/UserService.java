@@ -8,7 +8,7 @@ public interface UserService {
 
     void delete(Long id);
 
-    User getById(Long id);
+    User update(User user);
 
     List<User> findAll();
 

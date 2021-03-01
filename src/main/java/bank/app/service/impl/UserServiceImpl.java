@@ -4,7 +4,6 @@ import bank.app.exceptions.NoSuchEntityException;
 import bank.app.model.User;
 import bank.app.repository.UserRepository;
 import bank.app.service.UserService;
-import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
